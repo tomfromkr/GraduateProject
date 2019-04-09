@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+
+
+  <body>
+
+<hi>3강 자바 스크립트 코드는 script 태그안에 작성</hi>
+    <h1>JavaScript</h1>
+    <script>
+      document.write(1+1);
+    </script>
+    <h1>html</h1>
+    1+1
+
+
+
+<br><br><br><br><hi>4강 각종 상호작용하는 이벤트들</hi><br><br>
+
+<input type="button" value ="hi" onclick ="alert('hi')">
+<input type="text" onchange ="alert('changed')">
+<input type="text" onkeydown ="alert('key down!')">
+
+
+
+
+
+<br><br><br><br><hi>5강 데이터 타입과 변수들</hi><br><br>
+
+<h1>Object</h1>
+   <h2>Create</h2>
+   <script>
+     var coworkers = {
+       "programmer":"egoing",
+       "designer":"leezche"
+     };
+     document.write("programmer : "+coworkers.programmer+"<br>");
+     document.write("designer : "+coworkers.designer+"<br>");
+     coworkers.bookkeeper = "duru";
+     document.write("bookkeeper : "+coworkers.bookkeeper+"<br>");
+     coworkers["data scientist"] = "taeho";
+    document.write(coworkers.programmer);
+     document.write("data scientist : "+coworkers["data scientist"]+"<br>");
+   </script>
+
+
+
+  </body>
+
+</html>
