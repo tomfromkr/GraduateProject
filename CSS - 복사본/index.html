@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+
+
+    .layer{position:absolute;top:0;left:0;width:100%;height:100%;text-align:center}
+    .layer .content{display:inline-block;vertical-align:middle}
+    .layer .blank{display:inline-block;width:0;height:100%;vertical-align:middle}
+
+
+
+
+/*
+    height : 500px;
+    background-image : url('background.jpg');
+    background-repeat : no-repeat;
+    background-attachment : scroll;
+ background-size: contain;
+     /* background-position : left top  or x% y% or x y */
+
+
+
+    /* background-size : 100px 100px or cover or contain */
+
+
+
+    #login{
+
+      border-radius: 5px;
+      display: inline-block;
+
+      background-color: white;
+
+      padding-right: 50px;
+      padding-left: 50px;
+      padding-top: -15px;
+      padding-bottom: 20px;
+      border:2px solid coral ;
+box-shadow: 20px 12px 24px 20px rgba(0, 0, 0, 0.2), 20px 6px 20px 20px rgba(0, 0, 0, 0.19);
+
+
+
+
+    }
+
+
+
+
+      #mme
+      {
+
+        transform: scale(0.8,0.8) translateX(-15px) translateY(15px);
+
+      }
+
+      #login1
+      {
+        margin-bottom :1px;
+        border-radius: 5px;
+        padding-right: 90px;
+        padding-left: 90px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        color: white;
+        position :center;
+        transform: translateX(1px);
+        background-color: coral;
+
+      }
+
+      #checkbox1
+      {
+
+      }
+
+      #id
+      {
+        border-radius: 2px;
+      transform: scaleX(1.1) translateX(15px);
+
+
+      }
+
+      #pw
+      {
+        border-radius: 2px;
+      transform: scaleX(1.1)  translateX(15px);
+
+      }
+
+      #idp, #pwp
+      {
+        text-align: cneter;
+transform: translateX(-15px);
+      }
+
+      #ckp
+      {
+        text-align: left;
+        transform: scaleX(1.1)  translateX(33px);
+
+      }
+
+      body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.bgimg {
+    border: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+    <script>
+
+
+    </script>
+
+</head>
+
+<body>
+  <div class="bgimg"></div>
+
+
+
+
+
+
+  <div class="layer">
+    <span class="content">
+       <form action="" id = "login">
+
+                    <p>      <img src="mme.jpg" alt="" id= "mme">  </p>
+                   <p id ="idp"><i class="	fas fa-user-circle"></i>  <input type="text" id = "id"  placeholder ="Admin"></p>
+
+                   <p id = "pwp"> <i class="	fas fa-user-secret"></i>  <input type="password" id = "pw" name="pwd" placeholder ="Password" ></p>
+                   <p id = "ckp"><input type = "checkbox" value = "기억하기" id ="checkbox1"> Save <br> </p>
+                   <p> <input type = "submit" value = "Log in" id= "login1" ></p>
+            </form>
+          </span>
+
+    <span class="blank"></span>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
