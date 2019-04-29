@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html >
+    <head>
+
+        <title> notebook </title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+                <style>
+
+
+
+                #top{
+                  background-color :white;
+                  height :100px;
+                }
+
+                #top-in
+                {
+                  border-radius: 5px;
+                  border:2px solid coral ;
+                  padding : 10px;
+                  margin-left: 65px;
+                  margin-right: 65px;
+                }
+
+                #LogoutButton{
+                  background-color : white;
+                  float :right;
+
+                  padding:3px;
+                }
+
+                #top-in2
+                {
+                  border-radius: 5px;
+                  border:2px solid coral ;
+                  padding : 10px;
+                  margin-left: 65px;
+                  margin-right: 65px;
+                  margin-top: 10px;
+                }
+
+
+
+
+
+                #RunButton{
+                  background-color : white;
+                }
+
+                #Plus_Cell_Button{
+                  background-color : white;
+
+                }
+
+
+
+                #middle{
+                  background-color: rgb(240, 240, 240);
+                  height :2000px;
+                  margin-top:10px;
+                  padding-top: 20px;
+                  padding-bottom :20px;
+
+
+
+                }
+
+                #middle-in{
+                  border-radius: 5px;
+                  background-color: white;
+                  border:2px solid coral ;
+                  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2), 5px 5px 5px 5px rgba(0, 0, 0, 0.19);
+
+                  height : 2000px;
+                  margin-left: 65px;
+                  margin-right: 65px;
+                }
+
+                fieldset{
+                  margin-top :5px;
+                  margin-bottom:5px;
+                  margin-left:100px;
+                  margin-right:30px;
+                  border:2px solid coral ;
+                }
+
+                input[type=text] {
+                  background-color :rgb(240, 240, 240);
+                  width: 85%;
+                  border-radius: 3px;
+                }
+
+
+
+                Var Number =1;
+
+                </style>
+
+
+                <script type="text/javascript">
+
+                  function Run_Cell(){
+                   document.getElementById("middle-in").innerHTML +=
+                   " <fieldset style='color:red;'>  <legend> Output Cell: </legend> Out [  ] : </fieldset> ";
+                  }
+
+                  function add_textbox(){
+                   document.getElementById("middle-in").innerHTML +=
+                   " <form  action='' method='post' > <fieldset  style='color:blue;'><legend>Command Cell:</legend>In [  ] : <input type='text'> <input type='submit'  value ='Run' onclick ='Run_Cell()' ></fieldset></form>";
+                  }
+
+
+
+                </script>
+
+
+
+    </head>
+
+
+
+
+
+    <body>
+
+
+
+
+
+
+              <div id="top" >
+
+                <div id="top-in" >
+                <i class="	fas fa-edit"></i> MME NoteBook <i id="docker_icon" class="	fab fa-docker"></i>   <button id = "LogoutButton" onclick ="alert('로그아웃 되었습니다.')">Logout</button>
+                </div>
+
+
+
+                <div id="top-in2">
+                  <button id ="Plus_Cell_Button" type="button"  onclick="add_textbox()"> <i class ="fa fa-plus"></i> </button>
+                  <button id="VisualizingButton" type="button" style ="background-color : white;" onclick="location.href='data_visual.html'"><i class ="fas fa-chart-area"></i></button>
+                  <button id="Help_Button" type="button" style ="background-color : white;" onclick="alert('도커 이미지 찾아보기\n$ docker search [image]\
+\nex) $ docker search ubuntu\n\n도커 이미지 내려받기\n$ docker pull [image:tag]\nex) $ docker pull ubuntu:16.04\n\n\
+설치된 이미지 목록 확인\n$ docker images\n\n이미지 삭제하기\n$ docker rmi [이미지 id]\n\n컨테이너 목록 확인\n$ docker ps -a\
+\n\n컨테이너 생성 및 실행하기\n$ docker run -[옵션] --name [컨테이너 이름] [이미지 이름] [명령어]\nex) docker run -it --name ubuntu1 ubuntu:16.04 /bin/bash\
+\n\n컨테이너 시작하기\n$ docker start [컨테이너 id or 컨테이너 name]\nex) $ docker start ubuntu1\
+\n\n컨테이너 접속하기\n$ docker attach [컨테이너 id or 컨테이너 name]\nex) $ docker attach ubuntu1\
+\n\n컨테이너 중지하기\n$ docker stop [컨테이너 id or 컨테이너 name]\nex) docker stop ubntu1\
+\n\n컨테이너 재시작하기\n$ docker restart [컨테이너 id or 컨테이너 name]\nex) $ docker restart ubuntu1\
+\n\n컨테이너 삭제하기\n$ docker rm [컨테이너 id or 컨테이너 name]\nex) $ docker rm ubuntu1')">
+                   Help
+                  </button>
+
+                </div>
+
+              </div>
+
+
+
+
+              <div id ="middle">
+                <div id="middle-in">
+                  <form  action="   " target="_blank" method="GET"  >
+                    <fieldset id="test"style='color:blue;'>
+                      <legend>Command Cell:</legend>
+                        In [  ] : <input  type="text" name ="command" >
+                       <input type="submit"  value ="Run" onclick ="Run_Cell()">
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+
+
+
+
+      </body>
+
+
+
+</html>
